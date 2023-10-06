@@ -159,3 +159,6 @@ const arrFresh1 = []
 
  arr3.map(item => typeof(item) == 'boolean' ? arrFresh1.push(item) : null  )
  console.log(arrFresh1)
+
+
+ for

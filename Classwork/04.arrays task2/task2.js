@@ -117,72 +117,137 @@ console.log(arr.reduce((total,item,index)=> item ==7 ? total+index : total , 0 )
 
 
 
-// let arr2 = [
-//     {
-//         name: 'test',
-//         key: 1
-//     },
-//     {
-//         name: 'task',
-//         key: 2
-//     },
-//     {
-//         name: 'tanqo',
-//         key: 3
-//     },
-//     {
-//         name: 'like',
-//         key: 4
-//     },
-//     {
-//         name: 'task',
-//         key: 5
-//     },
-//     {
-//         name: 'trust',
-//         key: 6
-//     },
-//     {
-//         name: 'test',
-//         key: 7
-//     },
-//     {
-//         name: 'last',
-//         key: 8
-//     },
-//     {
-//         name: 'tanqo',
-//         key: 9
-//     },
-//     {
-//         name: 'elephant',
-//         key: 10
-//     },
-//     {
-//         name: 'love',
-//         key: 11
-//     },
-//     {
-//         name: 'small',
-//         key: 12
-//     },
-//     {
-//         name: 'little',
-//         key: 13
-//     },
-// ]
+let arr2 = [
+    {
+        name: 'test',
+        key: 1
+    },
+    {
+        name: 'task',
+        key: 2
+    },
+    {
+        name: 'tanqo',
+        key: 3
+    },
+    {
+        name: 'like',
+        key: 4
+    },
+    {
+        name: 'task',
+        key: 5
+    },
+    {
+        name: 'trust',
+        key: 6
+    },
+    {
+        name: 'test',
+        key: 7
+    },
+    {
+        name: 'last',
+        key: 8
+    },
+    {
+        name: 'tanqo',
+        key: 9
+    },
+    {
+        name: 'elephant',
+        key: 10
+    },
+    {
+        name: 'love',
+        key: 11
+    },
+    {
+        name: 'small',
+        key: 12
+    },
+    {
+        name: 'little',
+        key: 13
+    },
+]
 
 
 //Aşağıdakı hər bir taskı function icərisində yazın.
 
-//QEYD Bu tasklarda arr2 istifade edilecekdir
-// 16 arr2 de "name"-i "t" herfi ile bashlayan obyektleri yeni arraya yigin
-// 17 arr2 de "name"-i "t" herfi ile bashlayib "t" herfi ile biten obyektlerin sayini tapin
-// 18 arr2 de "name"-i "t" herfi ile bashlayib "t" herfi ile biten obyektlerin "key"- lerinin cemini tapin
-// 19 arr2 de "name"-i "e" herfi ile biten obyeklerdeki name-in deyerini "SuperDev" sozu ile evezleyin.
-// 20 arr2 de "name"-i en uzun olan obyektin key-i ni tapin
+// //QEYD Bu tasklarda arr2 istifade edilecekdir
+// // 16 arr2 de "name"-i "t" herfi ile bashlayan obyektleri yeni arraya yigin
+//     arr3=arr2.filter(attribute => attribute.name.toLowerCase().startsWith("t"))
+//     conso le.log(arr3);
+
+// // 17 arr2 de "name"-i "t" herfi ile bashlayib "t" herfi ile biten obyektlerin sayini tapin
+  //  arr32=arr2.filter(attribute => attribute.name.toLowerCase().startsWith("t") && attribute.name.toLowerCase().endsWith("t"))
+  //  console.log(arr32);
+
+// // 18 arr2 de "name"-i "t" herfi ile bashlayib "t" herfi ile biten obyektlerin "key"- lerinin cemini tapin
+     //console.log(arr2.reduce((total,{name, key}) => name.toLowerCase().startsWith("t") && name.toLowerCase().endsWith("t") ? total+key : total , 0))
+
+// // 19 arr2 de "name"-i "e" herfi ile biten obyeklerdeki name-in deyerini "SuperDev" sozu ile evezleyin.
+ // console.log(arr2.map(attribute => attribute.name.toLowerCase().endsWith("e") ? name="Superdev" : attribute));
+
+
+// // 20 arr2 de "name"-i en uzun olan obyektin key-i ni tapin
+ // let biggestKey=Math.max(arr2.map(attribute => attribute.name.length && attribute.key))
+//     console.log(biggestKey);
+     
+
 // 21 arr2 de "name"-i en uzun olan obyektin indexin kvadratini hesablayin
+//  names = arr2.map(item => item.name)
+//  console.log(names);    // nameleri cixartdiq
+// nameLength = names.map(name => name.length)
+// console.log(nameLength);   // namelerin uzunlugunu cixartdiq
+// maxLength= Math.max(...nameLength) 
+// console.log(maxLength); // en uzun namei cixartdiq
+// arr2.map((member,index) => {
+//         if (member.name.length == maxLength) {
+//             console.log(index**2); //81
+//         }
+        
+//     })
+ 
 // 22 arr2 de "name"-inin uzunlugu 4 olan obyektlerden ibaret yeni array yaradin.
-// 23 arr2 de en boyuk "key" - i olan obyektin "name"-i ni tapin
+// names = arr2.map(item => item.name)
+// nameLength = names.map(name => name.length)
+
+//  arr3=names.filter(subject => subject.length==4)
+
+//  console.log(arr3);
+
+
+
+// // 23 arr2 de en boyuk "key" - i olan obyektin "name"-i ni tapin
+// keyz=arr2.map(item => item.key)
+// b1gKey=Math.max(...keyz)
+// console.log(b1gKey);
+// keyName= arr2.filter(subject=> subject.key==b1gKey)
+// console.log(keyName);
+
+
+
 // 24 arr2 de terkibinde 2 'L' herfi olan obyekt(ler)in index(ler)ini tapin.
 // 25 arr2 de terkibinde 2 't' herfi olan obyekt(ler)in key(ler)ini tapin.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let arr3
+//  arr3=arr2.filter(firstname => firstname.name.toLowerCase().startsWith("t"))
+//  console.log(arr3);
