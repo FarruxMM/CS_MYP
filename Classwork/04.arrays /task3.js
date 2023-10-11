@@ -131,7 +131,7 @@ console.log(result); */
 
 
 /*     arr3=arr2.filter(attribute => attribute.name.toLowerCase().startsWith("t"))
-     conso le.log(arr3); */
+     console.log(arr3); */
 
 
 // // 17 arr2 de "name"-i "t" herfi ile bashlayib "t" herfi ile biten obyektlerin sayini tapin
