@@ -65,21 +65,46 @@ function missingNum(arrayDigits) {
 // You're given a string of words. You need to find the word "Nemo", and return a string like this: "I found Nemo at [the order of the word you find Nemo]!".
 // If you can't find Nemo, return "I can't find Nemo :(".
 
-function findNemo(sentence) {
+// function findNemo(sentence) {
      
-     splittedSentence=sentence.split(" ")
-     if (splittedSentence.includes("Nemo")) {
-          let  wordOrder=splittedSentence.indexOf("Nemo")+1
-           finalResult="I found Nemo at "+wordOrder+" !"
-     } else {
-        finalResult="I can't find Nemo :("
-     }
-     return finalResult
-}
+//      splittedSentence=sentence.split(" ")
+//      if (splittedSentence.includes("Nemo")) {
+//           let  wordOrder=splittedSentence.indexOf("Nemo")+1
+//            finalResult="I found Nemo at "+wordOrder+" !"
+//      } else {
+//         finalResult="I can't find Nemo :("
+//      }
+//      return finalResult
+// }
 
 
-console.log(findNemo("I am finding Nemo !"));  // "I found Nemo at 4!"
-console.log(findNemo("Nemo is me"))  //"I found Nemo at 1!"
-console.log(findNemo("Is it Nemos, Nemona, Nemoor or Garfield?"))  // "I can't find Nemo :(" 
+// console.log(findNemo("I am finding Nemo !"));  // "I found Nemo at 4!"
+// console.log(findNemo("Nemo is me"))  //"I found Nemo at 1!"
+// console.log(findNemo("Is it Nemos, Nemona, Nemoor or Garfield?"))  // "I can't find Nemo :(" 
 
 // finalResult=splittedSentence.map(item => item=="Nemo" && console.log('I found Nemo at !'))   //map difficulties
+
+ // take 2
+// function findNemo(sentence) {
+     
+//    let splittedSentence=sentence.split(" ")
+//    let bosharray=[]
+//    let bosharray2=[]
+//       splittedSentence.map((item,index) => {
+//         if (item=="Nemo") {
+
+//                 bosharray.push(`I found Nemo at ${index+1} !`)
+//         }
+//         if (!bosharray2.length && !splittedSentence.includes("Nemo")){
+//             bosharray2.push(`I can't find Nemo :(`)
+//         }
+        
+//     })
+//     return bosharray.length ? bosharray.join("") : bosharray2.join("")
+   
+// }
+
+
+// console.log(findNemo("I am finding Nemo !"));  // "I found Nemo at 4!"
+// console.log(findNemo("Nemo is me"))  //"I found Nemo at 1!"
+// console.log(findNemo("Is it Nemos, Nemona, Nemoor or Garfield?"))  // "I can't find Nemo :(" 
